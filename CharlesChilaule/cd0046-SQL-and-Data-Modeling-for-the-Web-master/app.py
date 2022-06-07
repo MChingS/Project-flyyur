@@ -353,7 +353,7 @@ def show_artist(artist_id):
     "upcoming_shows_count": 3,
   }
   data = list(filter(lambda d: d['id'] == artist_id, [data1, data2, data3]))[0]
-  data = Artist.query.all()
+  #data = Artist.query.all()
   return render_template('pages/show_artist.html', artist=data)
 
 #  Update

@@ -9,6 +9,7 @@ from flask import Flask, render_template, request, Response, flash, redirect, ur
 from flask_moment import Moment
 from flask_sqlalchemy import SQLAlchemy
 import logging
+import psycopg2.extras, psycopg2
 from logging import Formatter, FileHandler
 from flask_wtf import Form
 from forms import *
@@ -16,9 +17,14 @@ from forms import *
 # App Config.
 #----------------------------------------------------------------------------#
 
+dabname="flyyur"
+user1="postgres"
+passwor="Mchingis123"
+hostn="localhost"
 app = Flask(__name__)
 moment = Moment(app)
 app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://postgres:Mchingis123@localhost:5432/flyyur'
+conn = psycopg2.connect(dbname=dabname, user=user1, password=passwor, host=hostn)
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 #app.config.from_object('config')
 db = SQLAlchemy(app)
@@ -352,9 +358,21 @@ def show_artist(artist_id):
     "past_shows_count": 0,
     "upcoming_shows_count": 3,
   }
-  data = list(filter(lambda d: d['id'] == artist_id, [data1, data2, data3]))[0]
+
+  lists=Artist.query.all(),
+  active_list=Artist.query.get(artist_id),
+  data9 =Artist.query.filter_by(artist_id=artist_id).order_by('id').all()
+
+  #data = list(filter(lambda d: d['id'] == artist_id, [data1, data2, data3]))[0]
   #data = Artist.query.all()
-  return render_template('pages/show_artist.html', artist=data)
+
+  cur = conn.cursor(cursor_factory=psycopg2.extras.DictCursor)
+
+  selec = "Select * from artist"
+  cur.execute(selec)
+  artist = cur.fetchall()
+  #return render_template('pages/show_artist.html', artist=data)
+  return render_template('pages/show_artist.html', artist=artist)
 
 #  Update
 #  ----------------------------------------------------------------

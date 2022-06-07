@@ -7,3 +7,375 @@
 2022-06-07 09:08:00,654 INFO: errors [in /home/thegreat/Documents/GitHub/Project-flyyur/CharlesChilaule/cd0046-SQL-and-Data-Modeling-for-the-Web-master/app.py:505]
 2022-06-07 11:14:56,821 INFO: errors [in /home/thegreat/Documents/GitHub/Project-flyyur/CharlesChilaule/cd0046-SQL-and-Data-Modeling-for-the-Web-master/app.py:514]
 2022-06-07 11:15:08,148 INFO: errors [in /home/thegreat/Documents/GitHub/Project-flyyur/CharlesChilaule/cd0046-SQL-and-Data-Modeling-for-the-Web-master/app.py:514]
+2022-06-07 12:42:02,757 ERROR: Exception on /artists/1 [GET] [in /home/thegreat/.local/lib/python3.10/site-packages/flask/app.py:1455]
+Traceback (most recent call last):
+  File "/home/thegreat/.local/lib/python3.10/site-packages/flask/app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/thegreat/.local/lib/python3.10/site-packages/flask/app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/thegreat/.local/lib/python3.10/site-packages/flask/app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/thegreat/.local/lib/python3.10/site-packages/flask/app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/home/thegreat/Documents/GitHub/Project-flyyur/CharlesChilaule/cd0046-SQL-and-Data-Modeling-for-the-Web-master/app.py", line 355, in show_artist
+IndexError: list index out of range
+2022-06-07 12:42:18,571 ERROR: Exception on /artists/1 [GET] [in /home/thegreat/.local/lib/python3.10/site-packages/flask/app.py:1455]
+Traceback (most recent call last):
+  File "/home/thegreat/.local/lib/python3.10/site-packages/flask/app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/thegreat/.local/lib/python3.10/site-packages/flask/app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/thegreat/.local/lib/python3.10/site-packages/flask/app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/thegreat/.local/lib/python3.10/site-packages/flask/app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/home/thegreat/Documents/GitHub/Project-flyyur/CharlesChilaule/cd0046-SQL-and-Data-Modeling-for-the-Web-master/app.py", line 355, in show_artist
+IndexError: list index out of range
+2022-06-07 12:42:26,129 ERROR: Exception on /artists/3 [GET] [in /home/thegreat/.local/lib/python3.10/site-packages/flask/app.py:1455]
+Traceback (most recent call last):
+  File "/home/thegreat/.local/lib/python3.10/site-packages/flask/app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/thegreat/.local/lib/python3.10/site-packages/flask/app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/thegreat/.local/lib/python3.10/site-packages/flask/app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/thegreat/.local/lib/python3.10/site-packages/flask/app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/home/thegreat/Documents/GitHub/Project-flyyur/CharlesChilaule/cd0046-SQL-and-Data-Modeling-for-the-Web-master/app.py", line 355, in show_artist
+IndexError: list index out of range
+2022-06-07 12:46:30,359 ERROR: Exception on /artists/1 [GET] [in /home/thegreat/.local/lib/python3.10/site-packages/flask/app.py:1455]
+Traceback (most recent call last):
+  File "/home/thegreat/.local/lib/python3.10/site-packages/flask/app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/thegreat/.local/lib/python3.10/site-packages/flask/app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/thegreat/.local/lib/python3.10/site-packages/flask/app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/thegreat/.local/lib/python3.10/site-packages/flask/app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/home/thegreat/Documents/GitHub/Project-flyyur/CharlesChilaule/cd0046-SQL-and-Data-Modeling-for-the-Web-master/app.py", line 355, in show_artist
+IndexError: list index out of range
+2022-06-07 13:06:37,980 ERROR: Exception on /artists/1 [GET] [in /home/thegreat/.local/lib/python3.10/site-packages/flask/app.py:1455]
+Traceback (most recent call last):
+  File "/home/thegreat/.local/lib/python3.10/site-packages/flask/app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/thegreat/.local/lib/python3.10/site-packages/flask/app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/thegreat/.local/lib/python3.10/site-packages/flask/app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/thegreat/.local/lib/python3.10/site-packages/flask/app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/home/thegreat/Documents/GitHub/Project-flyyur/CharlesChilaule/cd0046-SQL-and-Data-Modeling-for-the-Web-master/app.py", line 355, in show_artist
+IndexError: list index out of range
+2022-06-07 14:07:15,964 INFO: errors [in /home/thegreat/Documents/GitHub/Project-flyyur/CharlesChilaule/cd0046-SQL-and-Data-Modeling-for-the-Web-master/app.py:519]
+2022-06-07 14:07:23,278 ERROR: Exception on /artists/4 [GET] [in /home/thegreat/.local/lib/python3.10/site-packages/flask/app.py:1455]
+Traceback (most recent call last):
+  File "/home/thegreat/.local/lib/python3.10/site-packages/sqlalchemy/sql/base.py", line 1693, in _entity_namespace_key
+    return getattr(ns, key)
+AttributeError: type object 'Artist' has no attribute 'artist_id'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/thegreat/.local/lib/python3.10/site-packages/flask/app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/thegreat/.local/lib/python3.10/site-packages/flask/app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/thegreat/.local/lib/python3.10/site-packages/flask/app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/thegreat/.local/lib/python3.10/site-packages/flask/app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/home/thegreat/Documents/GitHub/Project-flyyur/CharlesChilaule/cd0046-SQL-and-Data-Modeling-for-the-Web-master/app.py", line 358, in show_artist
+    data9 =Artist.query.filter_by(artist_id=artist_id).order_by('id').all()
+  File "/home/thegreat/.local/lib/python3.10/site-packages/sqlalchemy/orm/query.py", line 1802, in filter_by
+    clauses = [
+  File "/home/thegreat/.local/lib/python3.10/site-packages/sqlalchemy/orm/query.py", line 1803, in <listcomp>
+    _entity_namespace_key(from_entity, key) == value
+  File "/home/thegreat/.local/lib/python3.10/site-packages/sqlalchemy/sql/base.py", line 1695, in _entity_namespace_key
+    util.raise_(
+  File "/home/thegreat/.local/lib/python3.10/site-packages/sqlalchemy/util/compat.py", line 208, in raise_
+    raise exception
+sqlalchemy.exc.InvalidRequestError: Entity namespace for "artist" has no property "artist_id"
+2022-06-07 14:07:30,025 ERROR: Exception on /artists/4 [GET] [in /home/thegreat/.local/lib/python3.10/site-packages/flask/app.py:1455]
+Traceback (most recent call last):
+  File "/home/thegreat/.local/lib/python3.10/site-packages/sqlalchemy/sql/base.py", line 1693, in _entity_namespace_key
+    return getattr(ns, key)
+AttributeError: type object 'Artist' has no attribute 'artist_id'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/thegreat/.local/lib/python3.10/site-packages/flask/app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/thegreat/.local/lib/python3.10/site-packages/flask/app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/thegreat/.local/lib/python3.10/site-packages/flask/app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/thegreat/.local/lib/python3.10/site-packages/flask/app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/home/thegreat/Documents/GitHub/Project-flyyur/CharlesChilaule/cd0046-SQL-and-Data-Modeling-for-the-Web-master/app.py", line 358, in show_artist
+    data9 =Artist.query.filter_by(artist_id=artist_id).order_by('id').all()
+  File "/home/thegreat/.local/lib/python3.10/site-packages/sqlalchemy/orm/query.py", line 1802, in filter_by
+    clauses = [
+  File "/home/thegreat/.local/lib/python3.10/site-packages/sqlalchemy/orm/query.py", line 1803, in <listcomp>
+    _entity_namespace_key(from_entity, key) == value
+  File "/home/thegreat/.local/lib/python3.10/site-packages/sqlalchemy/sql/base.py", line 1695, in _entity_namespace_key
+    util.raise_(
+  File "/home/thegreat/.local/lib/python3.10/site-packages/sqlalchemy/util/compat.py", line 208, in raise_
+    raise exception
+sqlalchemy.exc.InvalidRequestError: Entity namespace for "artist" has no property "artist_id"
+2022-06-07 14:07:33,119 ERROR: Exception on /artists/5 [GET] [in /home/thegreat/.local/lib/python3.10/site-packages/flask/app.py:1455]
+Traceback (most recent call last):
+  File "/home/thegreat/.local/lib/python3.10/site-packages/sqlalchemy/sql/base.py", line 1693, in _entity_namespace_key
+    return getattr(ns, key)
+AttributeError: type object 'Artist' has no attribute 'artist_id'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/thegreat/.local/lib/python3.10/site-packages/flask/app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/thegreat/.local/lib/python3.10/site-packages/flask/app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/thegreat/.local/lib/python3.10/site-packages/flask/app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/thegreat/.local/lib/python3.10/site-packages/flask/app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/home/thegreat/Documents/GitHub/Project-flyyur/CharlesChilaule/cd0046-SQL-and-Data-Modeling-for-the-Web-master/app.py", line 358, in show_artist
+    data9 =Artist.query.filter_by(artist_id=artist_id).order_by('id').all()
+  File "/home/thegreat/.local/lib/python3.10/site-packages/sqlalchemy/orm/query.py", line 1802, in filter_by
+    clauses = [
+  File "/home/thegreat/.local/lib/python3.10/site-packages/sqlalchemy/orm/query.py", line 1803, in <listcomp>
+    _entity_namespace_key(from_entity, key) == value
+  File "/home/thegreat/.local/lib/python3.10/site-packages/sqlalchemy/sql/base.py", line 1695, in _entity_namespace_key
+    util.raise_(
+  File "/home/thegreat/.local/lib/python3.10/site-packages/sqlalchemy/util/compat.py", line 208, in raise_
+    raise exception
+sqlalchemy.exc.InvalidRequestError: Entity namespace for "artist" has no property "artist_id"
+2022-06-07 14:07:35,660 ERROR: Exception on /artists/1 [GET] [in /home/thegreat/.local/lib/python3.10/site-packages/flask/app.py:1455]
+Traceback (most recent call last):
+  File "/home/thegreat/.local/lib/python3.10/site-packages/sqlalchemy/sql/base.py", line 1693, in _entity_namespace_key
+    return getattr(ns, key)
+AttributeError: type object 'Artist' has no attribute 'artist_id'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/thegreat/.local/lib/python3.10/site-packages/flask/app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/thegreat/.local/lib/python3.10/site-packages/flask/app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/thegreat/.local/lib/python3.10/site-packages/flask/app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/thegreat/.local/lib/python3.10/site-packages/flask/app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/home/thegreat/Documents/GitHub/Project-flyyur/CharlesChilaule/cd0046-SQL-and-Data-Modeling-for-the-Web-master/app.py", line 358, in show_artist
+    data9 =Artist.query.filter_by(artist_id=artist_id).order_by('id').all()
+  File "/home/thegreat/.local/lib/python3.10/site-packages/sqlalchemy/orm/query.py", line 1802, in filter_by
+    clauses = [
+  File "/home/thegreat/.local/lib/python3.10/site-packages/sqlalchemy/orm/query.py", line 1803, in <listcomp>
+    _entity_namespace_key(from_entity, key) == value
+  File "/home/thegreat/.local/lib/python3.10/site-packages/sqlalchemy/sql/base.py", line 1695, in _entity_namespace_key
+    util.raise_(
+  File "/home/thegreat/.local/lib/python3.10/site-packages/sqlalchemy/util/compat.py", line 208, in raise_
+    raise exception
+sqlalchemy.exc.InvalidRequestError: Entity namespace for "artist" has no property "artist_id"
+2022-06-07 14:07:38,707 ERROR: Exception on /artists/2 [GET] [in /home/thegreat/.local/lib/python3.10/site-packages/flask/app.py:1455]
+Traceback (most recent call last):
+  File "/home/thegreat/.local/lib/python3.10/site-packages/sqlalchemy/sql/base.py", line 1693, in _entity_namespace_key
+    return getattr(ns, key)
+AttributeError: type object 'Artist' has no attribute 'artist_id'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/thegreat/.local/lib/python3.10/site-packages/flask/app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/thegreat/.local/lib/python3.10/site-packages/flask/app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/thegreat/.local/lib/python3.10/site-packages/flask/app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/thegreat/.local/lib/python3.10/site-packages/flask/app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/home/thegreat/Documents/GitHub/Project-flyyur/CharlesChilaule/cd0046-SQL-and-Data-Modeling-for-the-Web-master/app.py", line 358, in show_artist
+    data9 =Artist.query.filter_by(artist_id=artist_id).order_by('id').all()
+  File "/home/thegreat/.local/lib/python3.10/site-packages/sqlalchemy/orm/query.py", line 1802, in filter_by
+    clauses = [
+  File "/home/thegreat/.local/lib/python3.10/site-packages/sqlalchemy/orm/query.py", line 1803, in <listcomp>
+    _entity_namespace_key(from_entity, key) == value
+  File "/home/thegreat/.local/lib/python3.10/site-packages/sqlalchemy/sql/base.py", line 1695, in _entity_namespace_key
+    util.raise_(
+  File "/home/thegreat/.local/lib/python3.10/site-packages/sqlalchemy/util/compat.py", line 208, in raise_
+    raise exception
+sqlalchemy.exc.InvalidRequestError: Entity namespace for "artist" has no property "artist_id"
+2022-06-07 14:24:46,963 INFO: errors [in /home/thegreat/Documents/GitHub/Project-flyyur/CharlesChilaule/cd0046-SQL-and-Data-Modeling-for-the-Web-master/app.py:519]
+2022-06-07 14:38:24,168 INFO: errors [in /home/thegreat/Documents/GitHub/Project-flyyur/CharlesChilaule/cd0046-SQL-and-Data-Modeling-for-the-Web-master/app.py:532]
+2022-06-07 14:38:42,036 ERROR: Exception on /artists/3 [GET] [in /home/thegreat/.local/lib/python3.10/site-packages/flask/app.py:1455]
+Traceback (most recent call last):
+  File "/home/thegreat/.local/lib/python3.10/site-packages/sqlalchemy/sql/base.py", line 1693, in _entity_namespace_key
+    return getattr(ns, key)
+AttributeError: type object 'Artist' has no attribute 'artist_id'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/thegreat/.local/lib/python3.10/site-packages/flask/app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/thegreat/.local/lib/python3.10/site-packages/flask/app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/thegreat/.local/lib/python3.10/site-packages/flask/app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/thegreat/.local/lib/python3.10/site-packages/flask/app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/home/thegreat/Documents/GitHub/Project-flyyur/CharlesChilaule/cd0046-SQL-and-Data-Modeling-for-the-Web-master/app.py", line 364, in show_artist
+    data9 =Artist.query.filter_by(artist_id=artist_id).order_by('id').all()
+  File "/home/thegreat/.local/lib/python3.10/site-packages/sqlalchemy/orm/query.py", line 1802, in filter_by
+    clauses = [
+  File "/home/thegreat/.local/lib/python3.10/site-packages/sqlalchemy/orm/query.py", line 1803, in <listcomp>
+    _entity_namespace_key(from_entity, key) == value
+  File "/home/thegreat/.local/lib/python3.10/site-packages/sqlalchemy/sql/base.py", line 1695, in _entity_namespace_key
+    util.raise_(
+  File "/home/thegreat/.local/lib/python3.10/site-packages/sqlalchemy/util/compat.py", line 208, in raise_
+    raise exception
+sqlalchemy.exc.InvalidRequestError: Entity namespace for "artist" has no property "artist_id"
+2022-06-07 14:38:45,541 ERROR: Exception on /artists/1 [GET] [in /home/thegreat/.local/lib/python3.10/site-packages/flask/app.py:1455]
+Traceback (most recent call last):
+  File "/home/thegreat/.local/lib/python3.10/site-packages/sqlalchemy/sql/base.py", line 1693, in _entity_namespace_key
+    return getattr(ns, key)
+AttributeError: type object 'Artist' has no attribute 'artist_id'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/thegreat/.local/lib/python3.10/site-packages/flask/app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/thegreat/.local/lib/python3.10/site-packages/flask/app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/thegreat/.local/lib/python3.10/site-packages/flask/app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/thegreat/.local/lib/python3.10/site-packages/flask/app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/home/thegreat/Documents/GitHub/Project-flyyur/CharlesChilaule/cd0046-SQL-and-Data-Modeling-for-the-Web-master/app.py", line 364, in show_artist
+    data9 =Artist.query.filter_by(artist_id=artist_id).order_by('id').all()
+  File "/home/thegreat/.local/lib/python3.10/site-packages/sqlalchemy/orm/query.py", line 1802, in filter_by
+    clauses = [
+  File "/home/thegreat/.local/lib/python3.10/site-packages/sqlalchemy/orm/query.py", line 1803, in <listcomp>
+    _entity_namespace_key(from_entity, key) == value
+  File "/home/thegreat/.local/lib/python3.10/site-packages/sqlalchemy/sql/base.py", line 1695, in _entity_namespace_key
+    util.raise_(
+  File "/home/thegreat/.local/lib/python3.10/site-packages/sqlalchemy/util/compat.py", line 208, in raise_
+    raise exception
+sqlalchemy.exc.InvalidRequestError: Entity namespace for "artist" has no property "artist_id"
+2022-06-07 14:47:40,824 INFO: errors [in /home/thegreat/Documents/GitHub/Project-flyyur/CharlesChilaule/cd0046-SQL-and-Data-Modeling-for-the-Web-master/app.py:532]
+2022-06-07 14:47:46,665 ERROR: Exception on /artists/2 [GET] [in /home/thegreat/.local/lib/python3.10/site-packages/flask/app.py:1455]
+Traceback (most recent call last):
+  File "/home/thegreat/.local/lib/python3.10/site-packages/sqlalchemy/sql/base.py", line 1693, in _entity_namespace_key
+    return getattr(ns, key)
+AttributeError: type object 'Artist' has no attribute 'artist_id'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/thegreat/.local/lib/python3.10/site-packages/flask/app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/thegreat/.local/lib/python3.10/site-packages/flask/app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/thegreat/.local/lib/python3.10/site-packages/flask/app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/thegreat/.local/lib/python3.10/site-packages/flask/app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/home/thegreat/Documents/GitHub/Project-flyyur/CharlesChilaule/cd0046-SQL-and-Data-Modeling-for-the-Web-master/app.py", line 364, in show_artist
+    data9 =Artist.query.filter_by(artist_id=artist_id).order_by('id').all()
+  File "/home/thegreat/.local/lib/python3.10/site-packages/sqlalchemy/orm/query.py", line 1802, in filter_by
+    clauses = [
+  File "/home/thegreat/.local/lib/python3.10/site-packages/sqlalchemy/orm/query.py", line 1803, in <listcomp>
+    _entity_namespace_key(from_entity, key) == value
+  File "/home/thegreat/.local/lib/python3.10/site-packages/sqlalchemy/sql/base.py", line 1695, in _entity_namespace_key
+    util.raise_(
+  File "/home/thegreat/.local/lib/python3.10/site-packages/sqlalchemy/util/compat.py", line 208, in raise_
+    raise exception
+sqlalchemy.exc.InvalidRequestError: Entity namespace for "artist" has no property "artist_id"
+2022-06-07 14:47:50,552 ERROR: Exception on /artists/4 [GET] [in /home/thegreat/.local/lib/python3.10/site-packages/flask/app.py:1455]
+Traceback (most recent call last):
+  File "/home/thegreat/.local/lib/python3.10/site-packages/sqlalchemy/sql/base.py", line 1693, in _entity_namespace_key
+    return getattr(ns, key)
+AttributeError: type object 'Artist' has no attribute 'artist_id'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/thegreat/.local/lib/python3.10/site-packages/flask/app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/thegreat/.local/lib/python3.10/site-packages/flask/app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/thegreat/.local/lib/python3.10/site-packages/flask/app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/thegreat/.local/lib/python3.10/site-packages/flask/app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/home/thegreat/Documents/GitHub/Project-flyyur/CharlesChilaule/cd0046-SQL-and-Data-Modeling-for-the-Web-master/app.py", line 364, in show_artist
+    data9 =Artist.query.filter_by(artist_id=artist_id).order_by('id').all()
+  File "/home/thegreat/.local/lib/python3.10/site-packages/sqlalchemy/orm/query.py", line 1802, in filter_by
+    clauses = [
+  File "/home/thegreat/.local/lib/python3.10/site-packages/sqlalchemy/orm/query.py", line 1803, in <listcomp>
+    _entity_namespace_key(from_entity, key) == value
+  File "/home/thegreat/.local/lib/python3.10/site-packages/sqlalchemy/sql/base.py", line 1695, in _entity_namespace_key
+    util.raise_(
+  File "/home/thegreat/.local/lib/python3.10/site-packages/sqlalchemy/util/compat.py", line 208, in raise_
+    raise exception
+sqlalchemy.exc.InvalidRequestError: Entity namespace for "artist" has no property "artist_id"
+2022-06-07 14:47:53,160 ERROR: Exception on /artists/5 [GET] [in /home/thegreat/.local/lib/python3.10/site-packages/flask/app.py:1455]
+Traceback (most recent call last):
+  File "/home/thegreat/.local/lib/python3.10/site-packages/sqlalchemy/sql/base.py", line 1693, in _entity_namespace_key
+    return getattr(ns, key)
+AttributeError: type object 'Artist' has no attribute 'artist_id'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/thegreat/.local/lib/python3.10/site-packages/flask/app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/thegreat/.local/lib/python3.10/site-packages/flask/app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/thegreat/.local/lib/python3.10/site-packages/flask/app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/thegreat/.local/lib/python3.10/site-packages/flask/app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/home/thegreat/Documents/GitHub/Project-flyyur/CharlesChilaule/cd0046-SQL-and-Data-Modeling-for-the-Web-master/app.py", line 364, in show_artist
+    data9 =Artist.query.filter_by(artist_id=artist_id).order_by('id').all()
+  File "/home/thegreat/.local/lib/python3.10/site-packages/sqlalchemy/orm/query.py", line 1802, in filter_by
+    clauses = [
+  File "/home/thegreat/.local/lib/python3.10/site-packages/sqlalchemy/orm/query.py", line 1803, in <listcomp>
+    _entity_namespace_key(from_entity, key) == value
+  File "/home/thegreat/.local/lib/python3.10/site-packages/sqlalchemy/sql/base.py", line 1695, in _entity_namespace_key
+    util.raise_(
+  File "/home/thegreat/.local/lib/python3.10/site-packages/sqlalchemy/util/compat.py", line 208, in raise_
+    raise exception
+sqlalchemy.exc.InvalidRequestError: Entity namespace for "artist" has no property "artist_id"
+2022-06-07 14:47:55,580 ERROR: Exception on /artists/1 [GET] [in /home/thegreat/.local/lib/python3.10/site-packages/flask/app.py:1455]
+Traceback (most recent call last):
+  File "/home/thegreat/.local/lib/python3.10/site-packages/sqlalchemy/sql/base.py", line 1693, in _entity_namespace_key
+    return getattr(ns, key)
+AttributeError: type object 'Artist' has no attribute 'artist_id'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/thegreat/.local/lib/python3.10/site-packages/flask/app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/thegreat/.local/lib/python3.10/site-packages/flask/app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/thegreat/.local/lib/python3.10/site-packages/flask/app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/thegreat/.local/lib/python3.10/site-packages/flask/app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/home/thegreat/Documents/GitHub/Project-flyyur/CharlesChilaule/cd0046-SQL-and-Data-Modeling-for-the-Web-master/app.py", line 364, in show_artist
+    data9 =Artist.query.filter_by(artist_id=artist_id).order_by('id').all()
+  File "/home/thegreat/.local/lib/python3.10/site-packages/sqlalchemy/orm/query.py", line 1802, in filter_by
+    clauses = [
+  File "/home/thegreat/.local/lib/python3.10/site-packages/sqlalchemy/orm/query.py", line 1803, in <listcomp>
+    _entity_namespace_key(from_entity, key) == value
+  File "/home/thegreat/.local/lib/python3.10/site-packages/sqlalchemy/sql/base.py", line 1695, in _entity_namespace_key
+    util.raise_(
+  File "/home/thegreat/.local/lib/python3.10/site-packages/sqlalchemy/util/compat.py", line 208, in raise_
+    raise exception
+sqlalchemy.exc.InvalidRequestError: Entity namespace for "artist" has no property "artist_id"

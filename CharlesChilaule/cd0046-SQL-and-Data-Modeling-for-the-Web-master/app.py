@@ -18,7 +18,7 @@ from forms import *
 
 app = Flask(__name__)
 moment = Moment(app)
-app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://postgres:abc@localhost:5432/flyyurnew'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://postgres:Mchingis123@localhost:5432/flyyur'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 #app.config.from_object('config')
 db = SQLAlchemy(app)
@@ -56,6 +56,15 @@ class Artist(db.Model):
     # TODO: implement any missing fields, as a database migration using Flask-Migrate
 
 # TODO Implement Show and Artist models, and complete all model relationships and properties, as a database migration.
+
+class Show(db.Model):
+  __tablename__ = 'shows'
+  id = db.Column(db.Integer, primary_key=True)
+  showDate = db.Column(db.String(20))
+  showTime =db.Column(db.String)
+  artistId = db.Column(db.Integer)
+  venueId = db.Column(db.Integer)
+  
 
 # create tables
 db.create_all()

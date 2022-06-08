@@ -12,6 +12,7 @@ import logging
 import psycopg2.extras, psycopg2
 from logging import Formatter, FileHandler
 from flask_wtf import Form
+from sqlalchemy import ForeignKey
 from forms import *
 #----------------------------------------------------------------------------#
 # App Config.
@@ -24,6 +25,7 @@ hostn="localhost"
 app = Flask(__name__)
 moment = Moment(app)
 app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://postgres:Mchingis123@localhost:5432/flyyur'
+
 conn = psycopg2.connect(dbname=dabname, user=user1, password=passwor, host=hostn)
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 #app.config.from_object('config')
@@ -66,10 +68,11 @@ class Artist(db.Model):
 class Show(db.Model):
   __tablename__ = 'shows'
   id = db.Column(db.Integer, primary_key=True)
-  showDate = db.Column(db.String(20))
-  showTime =db.Column(db.String)
-  artistId = db.Column(db.Integer)
-  venueId = db.Column(db.Integer)
+  artistId = db.Column(db.Integer, ForeignKey(Artist.id), nullable=False)
+  venueId = db.Column(db.Integer, ForeignKey(Venue.id), nullable=False)
+  showDateTime = db.Column(db.DateTime())
+  
+  
   
 
 # create tables
@@ -359,18 +362,17 @@ def show_artist(artist_id):
     "upcoming_shows_count": 3,
   }
 
-  lists=Artist.query.all(),
-  active_list=Artist.query.get(artist_id),
-  data9 =Artist.query.filter_by(artist_id=artist_id).order_by('id').all()
+  
 
   #data = list(filter(lambda d: d['id'] == artist_id, [data1, data2, data3]))[0]
   #data = Artist.query.all()
 
-  cur = conn.cursor(cursor_factory=psycopg2.extras.DictCursor)
 
-  selec = "Select * from artist"
-  cur.execute(selec)
-  artist = cur.fetchall()
+  lists=Artist.query.all(),
+  active_list=Artist.query.get(artist_id),
+  artist=Artist.query.filter_by(artist_id=artist_id).order_by('id').all()
+
+  
   #return render_template('pages/show_artist.html', artist=data)
   return render_template('pages/show_artist.html', artist=artist)
 

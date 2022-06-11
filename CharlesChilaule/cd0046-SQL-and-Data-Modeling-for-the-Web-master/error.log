@@ -3822,3 +3822,287 @@ TypeError: Query.filter_by() takes 1 positional argument but 3 were given
 2022-06-11 22:26:17,622 INFO: errors [in /home/thegreat/Documents/GitHub/Project-flyyur/CharlesChilaule/cd0046-SQL-and-Data-Modeling-for-the-Web-master/app.py:472]
 2022-06-11 22:26:28,114 INFO: errors [in /home/thegreat/Documents/GitHub/Project-flyyur/CharlesChilaule/cd0046-SQL-and-Data-Modeling-for-the-Web-master/app.py:472]
 2022-06-11 22:26:55,282 INFO: errors [in /home/thegreat/Documents/GitHub/Project-flyyur/CharlesChilaule/cd0046-SQL-and-Data-Modeling-for-the-Web-master/app.py:472]
+2022-06-11 22:28:36,002 INFO: errors [in /home/thegreat/Documents/GitHub/Project-flyyur/CharlesChilaule/cd0046-SQL-and-Data-Modeling-for-the-Web-master/app.py:472]
+2022-06-11 22:28:45,661 ERROR: Exception on /venues [GET] [in /home/thegreat/.local/lib/python3.10/site-packages/flask/app.py:1455]
+Traceback (most recent call last):
+  File "/home/thegreat/.local/lib/python3.10/site-packages/flask/app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/thegreat/.local/lib/python3.10/site-packages/flask/app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/thegreat/.local/lib/python3.10/site-packages/flask/app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/thegreat/.local/lib/python3.10/site-packages/flask/app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/home/thegreat/Documents/GitHub/Project-flyyur/CharlesChilaule/cd0046-SQL-and-Data-Modeling-for-the-Web-master/app.py", line 121, in venues
+    city_venues = Venue.query.filter_by(Venue.city, Venue.state).distinct().all()
+TypeError: Query.filter_by() takes 1 positional argument but 3 were given
+2022-06-11 22:29:59,870 ERROR: Exception on /venues [GET] [in /home/thegreat/.local/lib/python3.10/site-packages/flask/app.py:1455]
+Traceback (most recent call last):
+  File "/home/thegreat/.local/lib/python3.10/site-packages/flask/app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/thegreat/.local/lib/python3.10/site-packages/flask/app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/thegreat/.local/lib/python3.10/site-packages/flask/app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/thegreat/.local/lib/python3.10/site-packages/flask/app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/home/thegreat/Documents/GitHub/Project-flyyur/CharlesChilaule/cd0046-SQL-and-Data-Modeling-for-the-Web-master/app.py", line 121, in venues
+    all_cities = Venue.query.with_entities(Venue.city, Venue.state).distinct().all()
+TypeError: Query.filter_by() takes 1 positional argument but 3 were given
+2022-06-11 22:30:08,879 INFO: errors [in /home/thegreat/Documents/GitHub/Project-flyyur/CharlesChilaule/cd0046-SQL-and-Data-Modeling-for-the-Web-master/app.py:472]
+2022-06-11 22:30:46,726 ERROR: Exception on /venues/3 [GET] [in /home/thegreat/.local/lib/python3.10/site-packages/flask/app.py:1455]
+Traceback (most recent call last):
+  File "/home/thegreat/.local/lib/python3.10/site-packages/flask/app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/thegreat/.local/lib/python3.10/site-packages/flask/app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/thegreat/.local/lib/python3.10/site-packages/flask/app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/thegreat/.local/lib/python3.10/site-packages/flask/app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/home/thegreat/Documents/GitHub/Project-flyyur/CharlesChilaule/cd0046-SQL-and-Data-Modeling-for-the-Web-master/app.py", line 172, in show_venue
+    "genres": venue.genres,
+AttributeError: 'Venue' object has no attribute 'genres'
+2022-06-11 22:30:50,243 ERROR: Exception on /venues/2 [GET] [in /home/thegreat/.local/lib/python3.10/site-packages/flask/app.py:1455]
+Traceback (most recent call last):
+  File "/home/thegreat/.local/lib/python3.10/site-packages/flask/app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/thegreat/.local/lib/python3.10/site-packages/flask/app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/thegreat/.local/lib/python3.10/site-packages/flask/app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/thegreat/.local/lib/python3.10/site-packages/flask/app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/home/thegreat/Documents/GitHub/Project-flyyur/CharlesChilaule/cd0046-SQL-and-Data-Modeling-for-the-Web-master/app.py", line 172, in show_venue
+    "genres": venue.genres,
+AttributeError: 'Venue' object has no attribute 'genres'
+2022-06-11 22:32:06,070 INFO: errors [in /home/thegreat/Documents/GitHub/Project-flyyur/CharlesChilaule/cd0046-SQL-and-Data-Modeling-for-the-Web-master/app.py:486]
+2022-06-11 22:32:13,942 ERROR: Exception on /venues/3 [GET] [in /home/thegreat/.local/lib/python3.10/site-packages/flask/app.py:1455]
+Traceback (most recent call last):
+  File "/home/thegreat/.local/lib/python3.10/site-packages/flask/app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/thegreat/.local/lib/python3.10/site-packages/flask/app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/thegreat/.local/lib/python3.10/site-packages/flask/app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/thegreat/.local/lib/python3.10/site-packages/flask/app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/home/thegreat/Documents/GitHub/Project-flyyur/CharlesChilaule/cd0046-SQL-and-Data-Modeling-for-the-Web-master/app.py", line 171, in show_venue
+    for show in venue.shows:
+AttributeError: 'Venue' object has no attribute 'shows'
+2022-06-11 22:32:23,708 ERROR: Exception on /venues/2 [GET] [in /home/thegreat/.local/lib/python3.10/site-packages/flask/app.py:1455]
+Traceback (most recent call last):
+  File "/home/thegreat/.local/lib/python3.10/site-packages/flask/app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/thegreat/.local/lib/python3.10/site-packages/flask/app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/thegreat/.local/lib/python3.10/site-packages/flask/app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/thegreat/.local/lib/python3.10/site-packages/flask/app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/home/thegreat/Documents/GitHub/Project-flyyur/CharlesChilaule/cd0046-SQL-and-Data-Modeling-for-the-Web-master/app.py", line 171, in show_venue
+    for show in venue.shows:
+AttributeError: 'Venue' object has no attribute 'shows'
+2022-06-11 22:37:20,384 INFO: errors [in /home/thegreat/Documents/GitHub/Project-flyyur/CharlesChilaule/cd0046-SQL-and-Data-Modeling-for-the-Web-master/app.py:486]
+2022-06-11 22:37:29,440 ERROR: Exception on /artists/2 [GET] [in /home/thegreat/.local/lib/python3.10/site-packages/flask/app.py:1455]
+Traceback (most recent call last):
+  File "/home/thegreat/.local/lib/python3.10/site-packages/flask/app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/thegreat/.local/lib/python3.10/site-packages/flask/app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/thegreat/.local/lib/python3.10/site-packages/flask/app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/thegreat/.local/lib/python3.10/site-packages/flask/app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/home/thegreat/Documents/GitHub/Project-flyyur/CharlesChilaule/cd0046-SQL-and-Data-Modeling-for-the-Web-master/app.py", line 284, in show_artist
+    "id": artist.id,
+AttributeError: 'BaseQuery' object has no attribute 'id'
+2022-06-11 22:37:32,116 ERROR: Exception on /venues/3 [GET] [in /home/thegreat/.local/lib/python3.10/site-packages/flask/app.py:1455]
+Traceback (most recent call last):
+  File "/home/thegreat/.local/lib/python3.10/site-packages/flask/app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/thegreat/.local/lib/python3.10/site-packages/flask/app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/thegreat/.local/lib/python3.10/site-packages/flask/app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/thegreat/.local/lib/python3.10/site-packages/flask/app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/home/thegreat/Documents/GitHub/Project-flyyur/CharlesChilaule/cd0046-SQL-and-Data-Modeling-for-the-Web-master/app.py", line 171, in show_venue
+    for show in venue.shows:
+AttributeError: 'Venue' object has no attribute 'shows'
+2022-06-11 22:40:58,392 INFO: errors [in /home/thegreat/Documents/GitHub/Project-flyyur/CharlesChilaule/cd0046-SQL-and-Data-Modeling-for-the-Web-master/app.py:494]
+2022-06-11 22:41:05,226 ERROR: Exception on /artists/1 [GET] [in /home/thegreat/.local/lib/python3.10/site-packages/flask/app.py:1455]
+Traceback (most recent call last):
+  File "/home/thegreat/.local/lib/python3.10/site-packages/flask/app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/thegreat/.local/lib/python3.10/site-packages/flask/app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/thegreat/.local/lib/python3.10/site-packages/flask/app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/thegreat/.local/lib/python3.10/site-packages/flask/app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/home/thegreat/Documents/GitHub/Project-flyyur/CharlesChilaule/cd0046-SQL-and-Data-Modeling-for-the-Web-master/app.py", line 284, in show_artist
+    "artist_id": show.artist_id,
+AttributeError: 'Show' object has no attribute 'artist_id'
+2022-06-11 22:41:07,851 ERROR: Exception on /artists/4 [GET] [in /home/thegreat/.local/lib/python3.10/site-packages/flask/app.py:1455]
+Traceback (most recent call last):
+  File "/home/thegreat/.local/lib/python3.10/site-packages/flask/app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/thegreat/.local/lib/python3.10/site-packages/flask/app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/thegreat/.local/lib/python3.10/site-packages/flask/app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/thegreat/.local/lib/python3.10/site-packages/flask/app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/home/thegreat/Documents/GitHub/Project-flyyur/CharlesChilaule/cd0046-SQL-and-Data-Modeling-for-the-Web-master/app.py", line 304, in show_artist
+    "seeking_venue": artist.seeking_venue,
+AttributeError: 'Artist' object has no attribute 'seeking_venue'
+2022-06-11 22:41:09,658 ERROR: Exception on /artists/2 [GET] [in /home/thegreat/.local/lib/python3.10/site-packages/flask/app.py:1455]
+Traceback (most recent call last):
+  File "/home/thegreat/.local/lib/python3.10/site-packages/flask/app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/thegreat/.local/lib/python3.10/site-packages/flask/app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/thegreat/.local/lib/python3.10/site-packages/flask/app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/thegreat/.local/lib/python3.10/site-packages/flask/app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/home/thegreat/Documents/GitHub/Project-flyyur/CharlesChilaule/cd0046-SQL-and-Data-Modeling-for-the-Web-master/app.py", line 284, in show_artist
+    "artist_id": show.artist_id,
+AttributeError: 'Show' object has no attribute 'artist_id'
+2022-06-11 22:43:17,341 ERROR: Exception on /artists/create [POST] [in /home/thegreat/.local/lib/python3.10/site-packages/flask/app.py:1455]
+Traceback (most recent call last):
+  File "/home/thegreat/Documents/GitHub/Project-flyyur/CharlesChilaule/cd0046-SQL-and-Data-Modeling-for-the-Web-master/app.py", line 399, in create_artist_submission
+    new_artist = Artist(name=request.form['name'],city=request.form['city'],state=request.form['state'],genre=request.form['genre'],
+  File "/home/thegreat/.local/lib/python3.10/site-packages/werkzeug/datastructures.py", line 375, in __getitem__
+    raise exceptions.BadRequestKeyError(key)
+werkzeug.exceptions.BadRequestKeyError: 400 Bad Request: The browser (or proxy) sent a request that this server could not understand.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/thegreat/.local/lib/python3.10/site-packages/flask/app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/thegreat/.local/lib/python3.10/site-packages/flask/app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/thegreat/.local/lib/python3.10/site-packages/flask/app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/thegreat/.local/lib/python3.10/site-packages/flask/app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/home/thegreat/Documents/GitHub/Project-flyyur/CharlesChilaule/cd0046-SQL-and-Data-Modeling-for-the-Web-master/app.py", line 404, in create_artist_submission
+    db.rollback()
+AttributeError: 'SQLAlchemy' object has no attribute 'rollback'
+2022-06-11 22:44:06,267 INFO: errors [in /home/thegreat/Documents/GitHub/Project-flyyur/CharlesChilaule/cd0046-SQL-and-Data-Modeling-for-the-Web-master/app.py:517]
+2022-06-11 22:44:13,884 ERROR: Exception on /artists/create [POST] [in /home/thegreat/.local/lib/python3.10/site-packages/flask/app.py:1455]
+Traceback (most recent call last):
+  File "/home/thegreat/Documents/GitHub/Project-flyyur/CharlesChilaule/cd0046-SQL-and-Data-Modeling-for-the-Web-master/app.py", line 410, in create_artist_submission
+    website = request.form['website']
+  File "/home/thegreat/.local/lib/python3.10/site-packages/werkzeug/datastructures.py", line 375, in __getitem__
+    raise exceptions.BadRequestKeyError(key)
+werkzeug.exceptions.BadRequestKeyError: 400 Bad Request: The browser (or proxy) sent a request that this server could not understand.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/thegreat/.local/lib/python3.10/site-packages/flask/app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/thegreat/.local/lib/python3.10/site-packages/flask/app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/thegreat/.local/lib/python3.10/site-packages/flask/app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/thegreat/.local/lib/python3.10/site-packages/flask/app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/home/thegreat/Documents/GitHub/Project-flyyur/CharlesChilaule/cd0046-SQL-and-Data-Modeling-for-the-Web-master/app.py", line 423, in create_artist_submission
+    print(sys.exc_info())
+NameError: name 'sys' is not defined
+2022-06-11 22:44:27,776 ERROR: Exception on /artists/create [POST] [in /home/thegreat/.local/lib/python3.10/site-packages/flask/app.py:1455]
+Traceback (most recent call last):
+  File "/home/thegreat/Documents/GitHub/Project-flyyur/CharlesChilaule/cd0046-SQL-and-Data-Modeling-for-the-Web-master/app.py", line 410, in create_artist_submission
+    website = request.form['website']
+  File "/home/thegreat/.local/lib/python3.10/site-packages/werkzeug/datastructures.py", line 375, in __getitem__
+    raise exceptions.BadRequestKeyError(key)
+werkzeug.exceptions.BadRequestKeyError: 400 Bad Request: The browser (or proxy) sent a request that this server could not understand.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/thegreat/.local/lib/python3.10/site-packages/flask/app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/thegreat/.local/lib/python3.10/site-packages/flask/app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/thegreat/.local/lib/python3.10/site-packages/flask/app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/thegreat/.local/lib/python3.10/site-packages/flask/app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/home/thegreat/Documents/GitHub/Project-flyyur/CharlesChilaule/cd0046-SQL-and-Data-Modeling-for-the-Web-master/app.py", line 423, in create_artist_submission
+    print(sys.exc_info())
+NameError: name 'sys' is not defined
+2022-06-11 22:48:07,865 INFO: errors [in /home/thegreat/Documents/GitHub/Project-flyyur/CharlesChilaule/cd0046-SQL-and-Data-Modeling-for-the-Web-master/app.py:493]
+2022-06-11 22:48:13,138 ERROR: Exception on /shows [GET] [in /home/thegreat/.local/lib/python3.10/site-packages/flask/app.py:1455]
+Traceback (most recent call last):
+  File "/home/thegreat/.local/lib/python3.10/site-packages/flask/app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/thegreat/.local/lib/python3.10/site-packages/flask/app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/thegreat/.local/lib/python3.10/site-packages/flask/app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/thegreat/.local/lib/python3.10/site-packages/flask/app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/home/thegreat/Documents/GitHub/Project-flyyur/CharlesChilaule/cd0046-SQL-and-Data-Modeling-for-the-Web-master/app.py", line 449, in shows
+    "venue_id": item.venue_id,
+AttributeError: 'Show' object has no attribute 'venue_id'
+2022-06-11 22:48:34,500 ERROR: Exception on /shows [GET] [in /home/thegreat/.local/lib/python3.10/site-packages/flask/app.py:1455]
+Traceback (most recent call last):
+  File "/home/thegreat/.local/lib/python3.10/site-packages/flask/app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/thegreat/.local/lib/python3.10/site-packages/flask/app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/thegreat/.local/lib/python3.10/site-packages/flask/app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/thegreat/.local/lib/python3.10/site-packages/flask/app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/home/thegreat/Documents/GitHub/Project-flyyur/CharlesChilaule/cd0046-SQL-and-Data-Modeling-for-the-Web-master/app.py", line 449, in shows
+    "venue_id": item.venue_id,
+AttributeError: 'Show' object has no attribute 'venue_id'
+2022-06-11 22:49:08,105 ERROR: Exception on /shows [GET] [in /home/thegreat/.local/lib/python3.10/site-packages/flask/app.py:1455]
+Traceback (most recent call last):
+  File "/home/thegreat/.local/lib/python3.10/site-packages/flask/app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/thegreat/.local/lib/python3.10/site-packages/flask/app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/thegreat/.local/lib/python3.10/site-packages/flask/app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/thegreat/.local/lib/python3.10/site-packages/flask/app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/home/thegreat/Documents/GitHub/Project-flyyur/CharlesChilaule/cd0046-SQL-and-Data-Modeling-for-the-Web-master/app.py", line 449, in shows
+    "venue_id": item.venue_id,
+AttributeError: 'Show' object has no attribute 'venue_id'
+2022-06-11 22:49:17,399 ERROR: Exception on /shows [GET] [in /home/thegreat/.local/lib/python3.10/site-packages/flask/app.py:1455]
+Traceback (most recent call last):
+  File "/home/thegreat/.local/lib/python3.10/site-packages/flask/app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/thegreat/.local/lib/python3.10/site-packages/flask/app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/thegreat/.local/lib/python3.10/site-packages/flask/app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/thegreat/.local/lib/python3.10/site-packages/flask/app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/home/thegreat/Documents/GitHub/Project-flyyur/CharlesChilaule/cd0046-SQL-and-Data-Modeling-for-the-Web-master/app.py", line 449, in shows
+    "venue_id": item.venue_id,
+AttributeError: 'Show' object has no attribute 'venue_id'
+2022-06-11 23:18:46,880 INFO: errors [in /home/thegreat/Documents/GitHub/Project-flyyur/CharlesChilaule/cd0046-SQL-and-Data-Modeling-for-the-Web-master/app.py:510]
+2022-06-11 23:45:10,971 INFO: errors [in /home/thegreat/Documents/GitHub/Project-flyyur/CharlesChilaule/cd0046-SQL-and-Data-Modeling-for-the-Web-master/app.py:546]
+2022-06-11 23:45:25,989 INFO: errors [in /home/thegreat/Documents/GitHub/Project-flyyur/CharlesChilaule/cd0046-SQL-and-Data-Modeling-for-the-Web-master/app.py:546]
+2022-06-11 23:45:40,708 ERROR: Exception on /shows [GET] [in /home/thegreat/.local/lib/python3.10/site-packages/flask/app.py:1455]
+Traceback (most recent call last):
+  File "/home/thegreat/.local/lib/python3.10/site-packages/flask/app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/thegreat/.local/lib/python3.10/site-packages/flask/app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/thegreat/.local/lib/python3.10/site-packages/flask/app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/thegreat/.local/lib/python3.10/site-packages/flask/app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/home/thegreat/Documents/GitHub/Project-flyyur/CharlesChilaule/cd0046-SQL-and-Data-Modeling-for-the-Web-master/app.py", line 485, in shows
+    "venue_id": item.venue_id,
+AttributeError: 'Show' object has no attribute 'venue_id'

@@ -144,6 +144,7 @@ def search_venues():
   # search for "Music" should return "The Musical Hop" and "Park Square Live Music & Coffee"
         term = request.form.get('search_term')
         term = "%{}%".format(term)
+
         query_data = Venue.query.filter(Venue.name.ilike(term) | Venue.city.ilike(term) | Venue.state.ilike(term)).all()
         data = []
         for item in query_data:
@@ -170,10 +171,10 @@ def show_venue(venue_id):
         upcoming_shows = []
         for show in venue.shows:
             show_data = {
-                "artist_id": show.artist_id,
+                "artist_id": show.artistId,
                 "artist_name": show.artist.name,
                 "artist_image_link": show.artist.image_link,
-                "start_time": show.start_time.strftime('%Y-%m-%d %H:%M:%S'),
+                "start_time": show.showDateTime.strftime('%Y-%m-%d %H:%M:%S'),
             }
             if datetime.now() > show.start_time:
                 past_shows.append(show_data)
@@ -191,8 +192,8 @@ def show_venue(venue_id):
             "website": venue.website,
             "image_link": venue.image_link,
             "facebook_link": venue.facebook_link,
-            "seeking_talent": venue.seeking_talent,
-            "seeking_description": venue.seeking_description,
+            "seeking_talent": venue.seekingTalent,
+            "seeking_description": venue.seekingDescription,
             "past_shows": past_shows,
             "past_shows_count": len(past_shows),
             "upcoming_shows": upcoming_shows,
@@ -238,7 +239,7 @@ def create_venue_submission(venue_id):
         except:
             error = True
             db.session.rollback()
-            print(sys.exc_info())
+            
         finally:
             db.session.close()
         # on successful db insert, flash success
@@ -261,7 +262,7 @@ def delete_venue(venue_id):
         except:
             error = True
             db.session.rollback()
-            print(sys.exc_info())
+            
         finally:
             db.session.close()
 
@@ -322,12 +323,12 @@ def show_artist(artist_id):
         upcoming_shows = []
         for show in artist.shows:
             show_data = {
-                "artist_id": show.artist_id,
+                "artist_id": show.artistId,
                 "artist_name": show.artist.name,
                 "artist_image_link": show.artist.image_link,
-                "start_time": show.start_time.strftime('%Y-%m-%d %H:%M:%S'),
+                "start_time": show.showDateTime.strftime('%Y-%m-%d %H:%M:%S'),
             }
-            if datetime.now() > show.start_time:
+            if datetime.now() > show.showDateTime:
                 past_shows.append(show_data)
             else:
                 upcoming_shows.append(show_data)
@@ -342,8 +343,8 @@ def show_artist(artist_id):
             "website": artist.website,
             "image_link": artist.image_link,
             "facebook_link": artist.facebook_link,
-            "seeking_venue": artist.seeking_venue,
-            "seeking_description": artist.seeking_description,
+            "seeking_venue": artist.seekingVenue,
+            "seeking_description": artist.seekingDescription,
             "past_shows": past_shows,
             "past_shows_count": len(past_shows),
             "upcoming_shows": upcoming_shows,
@@ -440,7 +441,7 @@ def edit_venue_submission(venue_id):
         except:
             error = True
             db.session.rollback()
-            print(sys.exc_info())
+           
         finally:
             db.session.close()
         # on successful db insert, flash success
@@ -490,7 +491,7 @@ def create_artist_submission():
         except:
             error = True
             db.session.rollback()
-            print(sys.exc_info())
+           
         finally:
             db.session.close()
 
@@ -516,12 +517,12 @@ def shows():
         data = []
         for item in query_data:
             data.append({
-              "venue_id": item.venue_id,
+              "venue_id": item.venueId,
               "venue_name": item.venue.name,
-              "artist_id": item.artist_id,
+              "artist_id": item.artistId,
               "artist_name": item.artist.name,
               "artist_image_link": item.artist.image_link,
-              "start_time": item.start_time.strftime('%Y-%m-%d %H:%M:%S')
+              "start_time": item.showDateTime.strftime('%Y-%m-%d %H:%M:%S')
             })
         return render_template('pages/shows.html', shows=data)
 
@@ -546,7 +547,7 @@ def create_show_submission():
         except:
             error = True
             db.session.rollback()
-            print(sys.exc_info())
+            
         finally:
             db.session.close()
 

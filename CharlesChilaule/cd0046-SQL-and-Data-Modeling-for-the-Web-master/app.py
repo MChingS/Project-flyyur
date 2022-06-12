@@ -16,6 +16,7 @@ from logging import Formatter, FileHandler
 from flask_wtf import Form
 from sqlalchemy import ForeignKey
 from forms import *
+import sys
 #----------------------------------------------------------------------------#
 # App Config.
 #----------------------------------------------------------------------------#
@@ -31,7 +32,10 @@ app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://postgres:Mchingis123@local
 #conn = psycopg2.connect(dbname=dabname, user=user1, password=passwor, host=hostn)
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 #app.config.from_object('config')
+app.secret_key = 'super secret key'
+app.config['SESSION_TYPE'] = 'filesystem'
 db = SQLAlchemy(app)
+
 
 # TODO: connect to a local postgresql database
 
@@ -485,7 +489,7 @@ def create_artist_submission():
         except:
             error = True
             db.session.rollback()
-           
+            print(sys.exc_info())
         finally:
             db.session.close()
 
